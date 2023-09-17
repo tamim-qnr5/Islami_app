@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/myTheme.dart';
@@ -64,11 +63,12 @@ class _ThemeBottomSheetState extends State<ThemeBottomSheet> {
     );
   }
   Widget Unsected(String text){
-    var provider = Provider.of<AppConfigProvider>(context);
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Text(text,
-        style: Theme.of(context).textTheme.titleMedium,]]
-      ),);
+      child: Text(
+        text,
+        style: Theme.of(context).textTheme.titleMedium,
+      ),
+    );
   }
 }
